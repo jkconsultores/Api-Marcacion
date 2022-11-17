@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "L3DUo+R5mrkFFXlT30RTFSPJw2AW+L8RUai+sWRH2ME=",
+  "Source": "Asistencia-apirest",
+  "BasePath": "_content/Asistencia-apirest",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Asistencia-apirest\\wwwroot",
+      "Source": "Asistencia-apirest",
+      "ContentRoot": "E:\\proyectos\\apis\\LONGHORN_MARCACION\\Asistencia-apirest\\wwwroot\\",
+      "BasePath": "_content/Asistencia-apirest",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
