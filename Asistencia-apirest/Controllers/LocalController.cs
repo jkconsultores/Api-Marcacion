@@ -20,7 +20,7 @@ namespace Asistencia_apirest.Controllers
         // GET: LocalController
 
         [HttpGet("local")]
-        public async Task<IActionResult> GetLocal(string token)
+        public async Task<IActionResult> GetLocal([FromHeader]  string token)
         {
             var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)

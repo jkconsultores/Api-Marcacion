@@ -7519,11 +7519,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\proyectos\\apis\\LONGHORN_MARCACION\\Asistencia-apirest\\Asistencia-apirest.csproj",
+      "projectUniqueName": "E:\\proyectos\\apis\\Api-Marcacion\\Asistencia-apirest\\Asistencia-apirest.csproj",
       "projectName": "Asistencia-apirest",
-      "projectPath": "E:\\proyectos\\apis\\LONGHORN_MARCACION\\Asistencia-apirest\\Asistencia-apirest.csproj",
+      "projectPath": "E:\\proyectos\\apis\\Api-Marcacion\\Asistencia-apirest\\Asistencia-apirest.csproj",
       "packagesPath": "C:\\Users\\erick\\.nuget\\packages\\",
-      "outputPath": "E:\\proyectos\\apis\\LONGHORN_MARCACION\\Asistencia-apirest\\obj\\",
+      "outputPath": "E:\\proyectos\\apis\\Api-Marcacion\\Asistencia-apirest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\erick\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yeR4WdUHU5YsLUdCvacfpJJ56TO6fCEkruH2wurwUpk=",
+  "Hash": "G7cnlcQ+UQKLhyPeq7m0qEYyF8OoT6JGaqmXoI/hPTQ=",
   "Source": "Asistencia-apirest",
   "BasePath": "_content/Asistencia-apirest",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Asistencia-apirest\\wwwroot",
       "Source": "Asistencia-apirest",
-      "ContentRoot": "E:\\proyectos\\apis\\LONGHORN_MARCACION\\Asistencia-apirest\\wwwroot\\",
+      "ContentRoot": "E:\\proyectos\\apis\\Api-Marcacion\\Asistencia-apirest\\wwwroot\\",
       "BasePath": "_content/Asistencia-apirest",
       "Pattern": "**"
     }

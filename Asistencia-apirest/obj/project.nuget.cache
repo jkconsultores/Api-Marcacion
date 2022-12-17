@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7inh+j7IekIDdjaWZ+/WYySXqi62X77vnIzHgeg1H67qHjdAWTswwPKWlBkYkmnWy34YzUrVFkYi7QsL/3xpoA==",
+  "dgSpecHash": "FjSpe+nRKkIm7aQglf9HRJpeAPJHsqJOQIfTzX8yKoSqxn9gvEZGQyhOEUyOzX34E8sypclCZDt4UvvGK3KLKQ==",
   "success": true,
-  "projectFilePath": "E:\\proyectos\\apis\\LONGHORN_MARCACION\\Asistencia-apirest\\Asistencia-apirest.csproj",
+  "projectFilePath": "E:\\proyectos\\apis\\Api-Marcacion\\Asistencia-apirest\\Asistencia-apirest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\erick\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\erick\\.nuget\\packages\\grpc.core\\2.46.3\\grpc.core.2.46.3.nupkg.sha512",

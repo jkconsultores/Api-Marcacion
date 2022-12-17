@@ -24,7 +24,7 @@ namespace DemoAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetEmpleadosAsync(string token)
+        public async Task<IActionResult> GetEmpleadosAsync([FromHeader] string token)
         {
             var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)
@@ -74,7 +74,7 @@ namespace DemoAPI.Controllers
         }
 
         [HttpPost("update")]
-        public async Task<IActionResult> UpdateEmpleado(string token, Empleado empleado)
+        public async Task<IActionResult> UpdateEmpleado([FromHeader]  string token, Empleado empleado)
         {
             var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)
@@ -124,7 +124,7 @@ namespace DemoAPI.Controllers
         }
 
         [HttpPost("insert")]
-        public async Task<IActionResult> InsertEmpleado(string token, Empleado empleado)
+        public async Task<IActionResult> InsertEmpleado([FromHeader]  string token, Empleado empleado)
         {
             var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)
@@ -160,7 +160,7 @@ namespace DemoAPI.Controllers
 
 
         [HttpGet("info")]
-        public async Task<IActionResult> GetEmpleadoInfoAsync(string token,int codigo)
+        public async Task<IActionResult> GetEmpleadoInfoAsync([FromHeader] string token,int codigo)
         {
             var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)

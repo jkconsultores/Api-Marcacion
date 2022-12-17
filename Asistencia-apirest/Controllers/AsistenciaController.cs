@@ -24,7 +24,7 @@ namespace DemoAPI.Controllers
         }
         //listar asis
         [HttpGet]
-        public async Task<IActionResult> GetAsistenciasAsync(string token)
+        public async Task<IActionResult> GetAsistenciasAsync([FromHeader] string token)
         { var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)
             {
@@ -74,7 +74,7 @@ namespace DemoAPI.Controllers
         }
 
         [HttpGet("rangoAsistencia")]
-        public async Task<IActionResult> GetAsistenciasRangoAsync(string token, string desde, string hasta)
+        public async Task<IActionResult> GetAsistenciasRangoAsync([FromHeader] string token, string desde, string hasta)
         {
             var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)
@@ -124,7 +124,7 @@ namespace DemoAPI.Controllers
         }
 
         [HttpGet("mes")]
-        public async Task<IActionResult> GetAsistenciasPorMesAsync(string token,int mes,int year)
+        public async Task<IActionResult> GetAsistenciasPorMesAsync([FromHeader] string token,int mes,int year)
         {
             var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)
@@ -174,7 +174,7 @@ namespace DemoAPI.Controllers
             }
         }
         [HttpGet("empleado")]
-        public async Task<IActionResult> GetAsistenciasPorEmleadoAsync(string token, string desde,string hasta,int empleado)
+        public async Task<IActionResult> GetAsistenciasPorEmleadoAsync([FromHeader]  string token, string desde,string hasta,int empleado)
         {
             var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)
@@ -225,7 +225,7 @@ namespace DemoAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Asistencia>> GetAsistenciaById(string token,int id)
+        public async Task<ActionResult<Asistencia>> GetAsistenciaById([FromHeader]  string token,int id)
         {
             var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)
@@ -259,7 +259,7 @@ namespace DemoAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Asistencia>> MarcarAsistenciaAsync(string token,Asistencia asistencia)
+        public async Task<ActionResult<Asistencia>> MarcarAsistenciaAsync([FromHeader]  string token,Asistencia asistencia)
         {
             var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)
@@ -290,7 +290,7 @@ namespace DemoAPI.Controllers
         }
 
         [HttpPost("update")]
-        public async Task<IActionResult> UpdateAsistencia(string token,Asistencia asistencia)
+        public async Task<IActionResult> UpdateAsistencia([FromHeader]  string token,Asistencia asistencia)
         {
             var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)
@@ -327,7 +327,7 @@ namespace DemoAPI.Controllers
         }
 
         [HttpPost("insert")]
-        public async Task<ActionResult<Asistencia>> CreateAsistenciaAsync(string token, Asistencia asistencia)
+        public async Task<ActionResult<Asistencia>> CreateAsistenciaAsync([FromHeader] string token, Asistencia asistencia)
         {
             var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)

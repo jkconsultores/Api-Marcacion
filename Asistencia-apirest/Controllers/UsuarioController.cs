@@ -40,7 +40,7 @@ namespace DemoAPI.Controllers
             }
         }
         [HttpPost("vallogin")]
-        public async Task<IActionResult> validarlogin(string token)
+        public async Task<IActionResult> validarlogin([FromHeader]  string token)
         {
             var vtoken = _cifrado.validarToken(token);
             if (vtoken == null)
